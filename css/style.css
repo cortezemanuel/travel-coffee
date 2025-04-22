@@ -1,0 +1,185 @@
+/*Estilos de colores
+Marrón Café (#6F4E37) – Representa el café y la calidez.
+
+Caramelo (#C69C6D) – Un tono suave y acogedor, ideal para acentos.
+
+Beige (#F5E1C8) – Aporta un fondo ligero y armonioso.
+
+Terracota (#A35D4F) – Un toque rústico que evoca aventura y viajes.
+
+Gris Oscuro (#3E3E3E) – Para dar contraste en tipografía y detalles
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet') * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lora", serif;
+  font-size: 62.5%;
+}
+
+header {
+  background-color: #6f4e37;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  padding: 0px 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 20px;
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+}
+/* Navbar */
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar a {
+  color: #fad0a0;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #fa6446;
+}
+
+.banner {
+  background-image: url(../medios/banner.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 80px 0;
+  text-shadow: 1px -2px 7px rgba(0, 0, 0, 1);
+  font-size: large;
+}
+
+.main {
+  width: 400px;
+}
+
+.icono {
+  width: 300px;
+}
+
+.presentacion {
+  font-size: 2.5rem;
+}
+
+.presentacion h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.iconos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.objetivo {
+  background-color: #825349;
+  margin: 30px 0;
+  padding: 20px;
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-size: 2rem;
+  margin: 40px 0 20px;
+  color: #6f4e37;
+  font-family: "Roboto", sans-serif;
+}
+
+.destacados {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.item {
+  text-align: center;
+  max-width: 300px;
+}
+
+.item img.main {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 4 / 3; /* Opcional: mantiene una proporción */
+  object-fit: cover; /* Recorta si es necesario */
+  border-radius: 10px;
+}
+
+.item h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+footer {
+  background-color: #a35d4f;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.contacto {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el texto y la imagen */
+}
+
+.centro {
+  display: flex;
+  gap: 20px; /* Espacio entre las imágenes centrales */
+}
+
+.redes {
+  display: flex;
+  gap: 15px; /* Espacio entre los íconos de redes sociales */
+}
+
+img {
+  width: 70px; /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+
+.logowp {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+}
