@@ -48,6 +48,21 @@ header {
   margin: 5px;
 }
 /* Navbar */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Media query para tabletas y computadoras de escritorio */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .navbar ul {
   display: flex;
   align-items: center;
