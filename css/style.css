@@ -48,21 +48,6 @@ header {
   margin: 5px;
 }
 /* Navbar */
-
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Media query para tabletas y computadoras de escritorio */
-@media (min-width: 768px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
 .navbar ul {
   display: flex;
   align-items: center;
@@ -102,29 +87,9 @@ header {
 .icono {
   width: 300px;
 }
-
-body {
+.presentacion {
   font-size: 16px;
   padding: 10px;
-}
-
-/* Media query para tabletas */
-@media (min-width: 600px) {
-  body {
-    font-size: 18px;
-    padding: 20px;
-  }
-}
-
-/* Media query para computadoras de escritorio */
-@media (min-width: 1024px) {
-  body {
-    font-size: 20px;
-    padding: 30px;
-  }
-}
-.presentacion {
-  font-size: 2.5rem;
 }
 
 .presentacion h2 {
@@ -135,8 +100,24 @@ body {
 }
 
 .iconos {
-  display: flex;
+  font-size: 16px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-around;
+  align-content: center;
+  justify-items: center;
+}
+
+.iconos img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .iconos img {
+    width: 50%;
+  }
 }
 
 .objetivo {
@@ -184,6 +165,18 @@ body {
 
 footer {
   background-color: #a35d4f;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media query para computadoras de escritorio */
+@media (min-width: 1024px) {
+  img {
+    width: 50%;
+  }
 }
 
 .contenedor {
