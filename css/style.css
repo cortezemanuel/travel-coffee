@@ -10,7 +10,9 @@ Terracota (#A35D4F) – Un toque rústico que evoca aventura y viajes.
 Gris Oscuro (#3E3E3E) – Para dar contraste en tipografía y detalles
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet') * {
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
