@@ -103,6 +103,26 @@ header {
   width: 300px;
 }
 
+body {
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Media query para tabletas */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+/* Media query para computadoras de escritorio */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+    padding: 30px;
+  }
+}
 .presentacion {
   font-size: 2.5rem;
 }
