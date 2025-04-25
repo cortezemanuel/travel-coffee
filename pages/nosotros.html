@@ -1,56 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Cafés</title>
-    <!-- css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Nosotros</title>
 </head>
 <body>
     <header>
-        <!-- Logo -->
-        <a href="../index.html"><img  src="../medios/logo.png" alt=""></a>
-        <!-- Menú de navegación -->
-        <nav>
-            <ul>
-                <li><a href="./travel.html">Viajes</a></li>
-                <li><a href="./cafe.html">Cafés</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contactanos</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="header-container">
+          <!-- Logo -->
+          <a href="../index.html"><img class="logo" src="../medios/logo.png" alt="Logo de la marca"></a>
+          <!-- Menú de navegación -->
+          <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/travel.html">Viajes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/cafe.html">Cafés</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
 
     <main>
-        <!-- Título principal -->
-        <h1>Nosotros</h1>
-        
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquid voluptas non modi minima suscipit, ullam aperiam qui rerum incidunt enim sed debitis hic doloribus asperiores commodi? Nemo, delectus eveniet.</p>
+      <!-- Título principal -->
+      <section class="contenedor-grid">
+        <h1 class="grid-titulo">Quienes Somos</h1>
+        <p class="grid-texto-1">
+          En Travel & Coffee somos una pareja de profesionales del turismo que
+          decidió transformar su amor por los viajes y el café en una forma de
+          vida. Junto a nuestra perrita Moka recorremos rincones del mundo
+          descubriendo sabores, paisajes y experiencias auténticas que queremos
+          compartir con vos.
+        </p>
+        <p class="grid-texto-2">
+          Creemos que cada viaje es una historia esperando ser contada, y que no
+          hay mejor manera de vivirla que con una buena taza de café en la mano.
+          Por eso diseñamos propuestas que combinan lo mejor de ambos mundos:
+          aventuras personalizadas y momentos de pausa con aroma a café de
+          calidad, en destinos que inspiran.
+        </p>
+        <p class="grid-texto-3">
+          No somos una agencia más. En Travel & Coffee te acompañamos desde la
+          planificación hasta el último sorbo. Cada recomendación nace de la
+          experiencia vivida, de los caminos recorridos y de las charlas
+          compartidas en cafeterías escondidas por el mundo. Queremos que tu
+          viaje tenga alma, ritmo propio y mucho sabor.
+        </p>
+        <img class="grid-img-2" src="../medios/grilla1.png" alt="" />
+        <img class="grid-img-1" src="../medios/grilla2.png" alt="" />
+        <img class="grid-img-3" src="../medios/grilla3.png" alt="" />
+      </section>
     </main>
     <footer>
-        <div>
-            <p>Contactanos</p>
-            <a href="./pages/contacto.html">
-                <img class="contacto" src="../medios/contacto-icon.png" alt="">
-            </a>   
-            <a href="https://www.facebook.com/">
-                <img class="redes" src="../medios/facebook-icon.png"  alt=""> 
-            </a>
+        <div class="contenedor">
+                
+            <div class="contacto">
+                <p>Contáctanos</p>
+                <a href="./pages/contacto.html">
+                    <img src="../medios/contacto-icon.png" alt="Contacto">
+                </a>
+            </div>
         
-            <a href="https://www.instagram.com/">
-                <img class="redes" src="../medios/instagram-icon.png" alt="">
-            </a>
-            <a href="https://www.linkedin.com/">
-                <img class="redes" src="../medios/linkedin-icon.png" alt="">
-            </a>
-
+            <!-- Sección central: Nuevas imágenes -->
+            <div class="centro">
+                <img src="../medios/icono-avion.png" alt="Imagen 1">
+                <img src="../medios/icono-cafe.png" alt="Imagen 2">
+            </div>
+        
+            <!-- Sección derecha: Redes sociales -->
+            <div class="redes">
+                <a href="https://www.facebook.com/">
+                    <img src="../medios/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="../medios/instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img src="../medios/linkedin-icon.png" alt="LinkedIn">
+                </a>
+            </div>
         </div>
+        <a href="http://">
+        <img class="logowp" src="../medios/logo-whatsapp.png" alt="">
+        </a>
     </footer>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script> 
+  </body>
 </html>
