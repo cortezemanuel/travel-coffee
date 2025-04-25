@@ -313,6 +313,66 @@ img {
   font-weight: 700;
 }
 
+/* Viajes */
+
+.vuelos h1 {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.flight-search-wrapper {
+  background-color: #b07a58; /* Azul oscuro solo en el formulario */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 10vh;
+}
+
+.flight-search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.flight-search input,
+.flight-search select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  color: black;
+}
+
+.flight-search button {
+  background-color: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.flight-search button:hover {
+  background-color: #e14b4f;
+}
+
+.flight-search label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
 /* Responsive */
 /* Mobile */
 @media (max-width: 480px) {
