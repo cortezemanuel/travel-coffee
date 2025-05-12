@@ -1,0 +1,83 @@
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  .header img {
+    width: 40px;
+    height: auto;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  /* Iconos */
+  .presentacion .iconos {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+  }
+
+  /* Nosotros */
+  .contenedor-grid {
+    grid-template-areas:
+      "titulo"
+      "texto1"
+      "foto2"
+      "texto2"
+      "foto3"
+      "texto3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 200px 250px 250px 500px 250px;
+    margin: 10px;
+  }
+
+  .grid-img-1 {
+    display: none;
+  }
+
+  /* Cafe */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .text-paragraph {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .img-cafe img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .nuestro-cafe,
+  .tipos-de-cafe {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Footer */
+  footer .contenedor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .contacto,
+    .redes {
+      justify-content: center;
+    }
+
+    .centro {
+      display: none;
+    }
+  }
+}

@@ -1,21 +1,35 @@
-body {
-  background-color: #d0f0fd;
-}
-
-h1 {
-  color: #d94f4f;
-  font-family: "Lora", serif;
-  text-align: center;
-}
-nav {
-  background-color: red;
-}
-p {
-  font-family: "Roboto", sans-serif;
-}
-/* comentario */
-
-/* hola*/
-
-/* como va */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 @import "./partials/variables";
+@import "./partials/header&footer";
+@import "./partials/index";
+@import "./partials/cafe";
+@import "./partials/nosotros";
+@import "./partials/travel";
+@import "./partials/contacto";
+@import "./partials/mediaq";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lora", serif;
+  font-size: 62.5%;
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+/*Logo Whatsapp*/
+
+.logowp {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 60px;
+  height: auto;
+}

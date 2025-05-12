@@ -1,11 +1,16 @@
-$rojo: rgb(138, 105, 105);
+$cafe: #6f4e37;
 
 // extend
+
+.presentacion {
+  font-size: 16px;
+  padding: 10px;
+}
 
 .boton-rojo {
   border: black 3px solid;
   border: 10px;
-  color: $rojo;
+  color: $cafe;
   height: 80px;
   background-color: red;
 }
@@ -21,25 +26,26 @@ $rojo: rgb(138, 105, 105);
 
 // sin parametros
 
-@mixin row-center {
+@mixin flex-center {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  align-items: center;
 }
 
-.box {
-  @include row-center;
+@mixin destacados {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 20px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
 }
 
 // Con parametros
 
-@mixin tamanio($ancho, $alto) {
+@mixin dimension($ancho, $alto) {
   width: $ancho;
   height: $alto;
-}
-
-.logo {
-  @include tamanio(80px, 60px);
 }
 
 // mixto
@@ -49,8 +55,4 @@ $rojo: rgb(138, 105, 105);
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
-}
-
-.card {
-  @include flex(row, center, space-around);
 }

@@ -1,0 +1,32 @@
+/* Ubicacion y Contacto */
+.mainContacto {
+  .mapa {
+    @include flex-center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+  }
+  .contacto {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  .mensaje {
+    background-color: #e8ded7;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 30px auto;
+    .form-control,
+    .form-select,
+    textarea {
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+    h2 .contacto {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+/* Nosotros */
+
+.contenedor-grid {
+  display: grid;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "foto1 texto1 texto1"
+    "foto1 foto2 foto2"
+    "texto2 foto3 texto3";
+
+  grid-template-columns: 30% 30% 30%;
+
+  grid-template-rows: 100px 200px 600px 600px;
+
+  justify-content: center;
+
+  justify-items: center;
+
+  align-items: center;
+  img {
+    width: 95%;
+    height: 95%;
+    border-radius: 5px;
+    box-shadow: 7px 5px 2px 1px rgba(0, 0, 0, 0.75);
+  }
+  .grid-img-1 {
+    grid-area: foto1;
+    margin-right: 20px;
+  }
+
+  .grid-texto-1 {
+    grid-area: texto1;
+    font-size: 1.8rem;
+  }
+
+  .grid-img-2 {
+    grid-area: foto2;
+  }
+
+  .grid-texto-2 {
+    grid-area: texto2;
+    font-size: 1.8rem;
+  }
+
+  .grid-img-3 {
+    grid-area: foto3;
+  }
+
+  .grid-texto-3 {
+    grid-area: texto3;
+    font-size: 1.8rem;
+  }
+  .grid-titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+}
