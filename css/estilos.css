@@ -41,7 +41,7 @@ header {
   margin-top: 5px;
   margin-left: 5px;
   opacity: 0;
-  animation: myanimacion 2s infinite alternate;
+  animation: animacion1 2s infinite alternate;
 }
 .header-container .navbar ul {
   display: flex;
@@ -97,7 +97,8 @@ footer .contenedor .centro {
   gap: 20px;
   width: 80px;
   height: auto;
-  animation: myanimacion 2s infinite alternate;
+  transform: translateY(20px);
+  animation: animacion2 0.6s ease forwards;
 }
 footer .contenedor .redes {
   display: flex;
@@ -118,7 +119,6 @@ footer .contenedor .redes {
   justify-content: center;
 }
 
-/* for all social containers*/
 .socialContainer {
   width: 52px;
   height: 52px;
@@ -176,10 +176,16 @@ footer .contenedor .redes {
 }
 
 .socialContainer:hover .socialSvg {
-  animation: slide-in-top 0.3s both;
+  animation: animacion3 0.3s both;
 }
 
-@keyframes slide-in-top {
+@keyframes animacion2 {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes animacion3 {
   0% {
     transform: translateY(50px);
     opacity: 0;
@@ -189,7 +195,7 @@ footer .contenedor .redes {
     opacity: 1;
   }
 }
-@keyframes myanimacion {
+@keyframes animacion1 {
   0% {
     opacity: 0;
     transform: scale(0.95);
@@ -211,7 +217,7 @@ img {
   background-position: center;
   text-align: center;
   padding: 80px 0;
-  text-shadow: 1px -2px 7px rgb(0, 0, 0);
+  text-shadow: 1px -2px 7px rgb(255, 254, 254);
   font-size: large;
 }
 
@@ -249,8 +255,14 @@ img {
 }
 .presentacion .objetivo {
   background-color: #825349;
+  color: #fff;
   margin: 30px 0;
-  padding: 20px;
+  padding: 30px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 /* Destacados*/
@@ -260,6 +272,8 @@ img {
   margin: 40px 0 20px;
   color: #6f4e37;
   font-family: "Roboto", sans-serif;
+  animation: animacioncafe 1.2s ease-out both;
+  animation-delay: 0.3s;
 }
 .destinos .destacados {
   display: flex;
@@ -281,6 +295,9 @@ img {
   aspect-ratio: 4/3;
   object-fit: cover;
   border-radius: 10px;
+  animation: animacionzoom 1s ease-out both;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation-delay: 0.6s;
 }
 .destinos .item h3 {
   margin-top: 10px;
@@ -295,6 +312,8 @@ img {
   margin: 40px 0 20px;
   color: #6f4e37;
   font-family: "Roboto", sans-serif;
+  animation: animacioncafe 1.2s ease-out both;
+  animation-delay: 0.3s;
 }
 .cafes .destacados {
   display: flex;
@@ -317,6 +336,9 @@ img {
   aspect-ratio: 4/3;
   object-fit: cover;
   border-radius: 10px;
+  animation: animacionzoom 1s ease-out both;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation-delay: 0.9s;
 }
 .item h3 {
   margin-top: 10px;
@@ -331,6 +353,26 @@ img {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes animacioncafe {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes animacionzoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 /* Pagina Cafés */
@@ -498,6 +540,57 @@ img {
   flex-direction: column;
 }
 
+.hotsale h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff4b4b;
+  color: white;
+  padding: 10px;
+  margin: 0 auto 10px;
+  width: 50%;
+  border-radius: 8px;
+  font-weight: bold;
+  max-width: 1000px;
+  width: 90%;
+  font-size: 2rem;
+  animation: hotSaleAnim 2.5s ease-in-out infinite;
+}
+
+@keyframes hotSaleAnim {
+  0%, 100% {
+    transform: scale(1);
+    background-color: #ff4b4b;
+    box-shadow: 0 0 10px #ff4b4b;
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: #ff7575;
+    box-shadow: 0 0 20px #ff7575;
+  }
+}
+/* Carrusel */
+.carousel {
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+}
+.carousel .carousel-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.carousel .carousel-item .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
 /* Ubicacion y Contacto */
 .mainContacto .mapa {
   display: flex;
@@ -528,6 +621,12 @@ img {
   text-align: center;
   margin-bottom: 30px;
   font-weight: 700;
+}
+.mainContacto .mensaje .boton {
+  background-color: chocolate;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 @media (max-width: 480px) {
@@ -581,6 +680,20 @@ img {
     text-align: center;
     width: 100%;
   }
+  /* Contacto */
+  .mainContacto .mapa {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .mainContacto .mensaje {
+    width: 90%;
+    padding: 20px;
+    font-size: 1.6rem;
+  }
+  .mainContacto .contacto {
+    font-size: 2.5rem;
+  }
   /* Footer */
   footer .contenedor {
     flex-direction: column;
@@ -593,6 +706,23 @@ img {
   }
   footer .contenedor .centro {
     display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .mainContacto .mensaje {
+    padding: 30px;
+    max-width: 700px;
+  }
+  .mainContacto .contacto {
+    font-size: 2.8rem;
+  }
+  .main-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+  footer .contenedor {
+    flex-direction: column;
+    text-align: center;
   }
 }
 * {

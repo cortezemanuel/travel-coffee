@@ -6,6 +6,7 @@
     align-content: center;
     justify-content: center;
   }
+
   .flight-search-wrapper {
     background-color: #b07a58;
     padding: 20px;
@@ -14,12 +15,14 @@
     margin: auto;
     margin-top: 50px;
     margin-bottom: 10vh;
+
     .flight-search {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       align-items: center;
       justify-content: center;
+
       input,
       select {
         padding: 10px;
@@ -28,6 +31,7 @@
         width: 200px;
         color: black;
       }
+
       button {
         background-color: #ff5a5f;
         color: white;
@@ -40,15 +44,75 @@
           background-color: #e14b4f;
         }
       }
+
       label {
         display: block;
         margin-bottom: 5px;
         font-size: 14px;
       }
+
       .field {
         display: flex;
         flex-direction: column;
       }
+    }
+  }
+}
+
+.hotsale {
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4b4b;
+    color: white;
+    padding: 10px;
+    margin: 0 auto 10px;
+    width: 50%;
+    border-radius: 8px;
+    font-weight: bold;
+    max-width: 1000px;
+    width: 90%;
+    font-size: 2rem;
+    animation: hotSaleAnim 2.5s ease-in-out infinite;
+  }
+}
+
+@keyframes hotSaleAnim {
+  0%,
+  100% {
+    transform: scale(1);
+    background-color: #ff4b4b;
+    box-shadow: 0 0 10px #ff4b4b;
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: #ff7575;
+    box-shadow: 0 0 20px #ff7575;
+  }
+}
+/* Carrusel */
+
+.carousel {
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+
+  .carousel-item {
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2 / 1;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     }
   }
 }
